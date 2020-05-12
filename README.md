@@ -4,7 +4,7 @@ See GameOfLife.py for rules!
 
 This code uses a few Python packages. To install them, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), create a new conda environment by running
 ```shell
-conda create --name gameoflife --python=3.7
+conda create --name gameoflife python=3.7
 ```
 To install the packages needed to run ``play_game.py`` and ``draw_input_matplotlib.py``, run
 ```shell
