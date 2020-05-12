@@ -12,7 +12,7 @@ conda install numpy scipy matplotlib
 ```
 Running ``draw_input.py`` also requires OpenCV, which can be installed by running
 ```shell
-conda install -c conda_forge opencv
+conda install -c conda-forge opencv
 ```
 
 To play a game, run
