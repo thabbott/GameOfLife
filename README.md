@@ -29,4 +29,4 @@ or
 ```shell
 python draw_input.py
 ```
-and use them in the example game by replacing "Ronaldo" and/or "Messi" on lines 3 and/or 4 of ``play_game.py``. All you have to do to enter the tournament is send one (or more!) input file(s) to Tristan and/or Santi by May 25. (Name the file whatever you want your team name to be.)
+and use them in the example game by replacing "Ronaldo" and/or "Messi" on lines 3 and/or 4 of ``play_game.py``. All you have to do to enter the tournament is send one (or more!) input file(s) to Tristan and/or Santi by May 25. (Name the file whatever you want your team name to be.) The only limitation is that your input file **cannot have more than ??? active cells** (number TBD).
