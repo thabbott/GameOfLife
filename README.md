@@ -29,4 +29,4 @@ or
 ```shell
 python draw_input.py
 ```
-and use them in the example game by replacing "Ronaldo" and/or "Messi" on lines 3 and/or 4 of ``play_game.py``. All you have to do to enter the tournament is send one (or more!) input file(s) to Tristan and/or Santi by May 25. (Name the file whatever you want your team name to be.) The only limitation is that your input file **cannot have more than 100 active cells**.
+and use them in the example game by replacing "Ronaldo" and/or "Messi" on lines 3 and/or 4 of ``play_game.py``. All you have to do to enter the tournament is send one (or more!) input file(s) to Tristan and/or Santi by May 25. (Name the file whatever you want your team name to be.) The competition **will include two categories**: one where input files cannot have more than 100 active cells, and another where input files can have as many active cells as you want. We'll assume that you want to enter input files with <= 100 cells in the first category and files with >100 cells in the second category unless you tell us otherwise!
