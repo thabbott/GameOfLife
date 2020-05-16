@@ -1,6 +1,6 @@
 from GameOfLife import *
 
-output_frames = True
+output_frames = False
 
 fname1 = "Messi"
 fname2 = "Mothership"
