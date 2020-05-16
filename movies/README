@@ -1,0 +1,7 @@
+## A folder for saving frames of GameOfLife PvP matches
+
+The following `ffmpeg` command can be used to create an mp4 out of the list of snapshots that can be output by `play_game.py`
+
+```bash
+ffmpeg -framerate 30 -i %04d.png -vframes 1000 -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" Messi_vs_Mothership.mp4
+```
