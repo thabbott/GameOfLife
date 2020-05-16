@@ -1,6 +1,7 @@
 # Whizkey Game of Life tournament
-
 ![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thabbott/GameOfLife/master)
 
 See ``GameOfLife.py`` for rules!
 
