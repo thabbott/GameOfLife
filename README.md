@@ -18,10 +18,6 @@ If creating the environment manually, install the packages needed to run ``play_
 ```shell
 conda install numpy scipy matplotlib
 ```
-and the package OpenCV needed for ``draw_input.py`` by running
-```shell
-conda install -c conda-forge opencv
-```
 
 ### Playing an adversarial match of Conway's Game of Life
 To play a game, run
@@ -42,10 +38,6 @@ All you have to do to enter the tournament is send one (or more!) input file(s) 
 You can create your own input files by running
 ```shell
 python draw_input_matplotlib.py
-```
-or
-```shell
-python draw_input.py
 ```
 and clicking on cells to toggle cells between being inactive (white) or active (black).
 
