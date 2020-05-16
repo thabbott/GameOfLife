@@ -6,5 +6,3 @@ dependencies:
   - numpy
   - scipy
   - matplotlib
-  - opencv
-  - jupyterlab >= 1.0
