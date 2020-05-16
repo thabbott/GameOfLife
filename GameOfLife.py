@@ -57,7 +57,7 @@ class GameOfLife:
         self.T = T
         self.t = 0
         fig, axes = plt.subplots(nrows = 2, ncols = 1,
-                figsize = (8, 9), dpi = 100)
+                figsize = (7, 8), dpi = 100)
         self.fig = fig
         self.axes = axes
         self.image = axes[0].imshow(self.red - self.black, 
