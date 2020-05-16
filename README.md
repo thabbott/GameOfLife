@@ -1,5 +1,7 @@
 # Whizkey Game of Life tournament
 
+![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
+
 See GameOfLife.py for rules!
 
 This code uses a few Python packages. To install them, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), create a new conda environment by running
