@@ -22,7 +22,7 @@ and the package OpenCV needed for ``draw_input.py`` by running
 conda install -c conda-forge opencv
 ```
 
-### Playing a Player vs. Player match of Conway's Game of Life
+### Running a Player vs. Player match of Conway's Game of Life
 To play a game, run
 ```shell
 python play_game.py
