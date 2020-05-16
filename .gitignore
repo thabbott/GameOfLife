@@ -1,3 +1,12 @@
 *.pyc
 __pycache__
 *.swp
+.ipynb_checkpoints
+
+movies/*
+!movies/README
+!movies/Messi_vs_Mothership
+movies/Messi_vs_Mothership/*
+!movies/Messi_vs_Mothership/Messi_vs_Mothership.gif
+
+entries/HanksIllegalMasterplan

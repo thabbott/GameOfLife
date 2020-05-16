@@ -27,6 +27,7 @@ Rules:
       cells that are already present but will not overlap with each other.
 """
 
+import os
 import numpy as np
 from scipy import signal
 import matplotlib.pyplot as plt
@@ -56,7 +57,8 @@ class GameOfLife:
         self.T = T
         self.t = 0
         fig, axes = plt.subplots(nrows = 2, ncols = 1,
-                figsize = (6, 7), dpi = 100)
+                figsize = (8, 9), dpi = 100)
+        self.fig = fig
         self.axes = axes
         self.image = axes[0].imshow(self.red - self.black, 
                 vmin = -1.5, vmax = 1.5, cmap = "seismic")
@@ -97,6 +99,21 @@ class GameOfLife:
         plt.pause(0.01)
 
     """
+    Save snapshot of displayed board
+    """
+    def save_display(self):
+        match_name = f"{self.red_name}_vs_{self.black_name}"
+        dir_name = f"movies/{match_name}"
+        if not os.path.exists(dir_name):
+            os.mkdir(dir_name)
+        self.fig.savefig(
+            f"movies/{match_name}/{str(np.int64(self.t/3)).zfill(4)}.png",
+            bbox_inches='tight', dpi=100.
+        )
+        
+
+
+    """
     Read from a file to set a player's initial cell configuration
     
     The file must contain M columns and N rows of 0s and 1s
@@ -127,11 +144,11 @@ class GameOfLife:
         arr = np.reshape(arr, (self.N, self.M))
         if red:
             self.red[:, :self.M] = arr
-            self.red_name = fname
+            self.red_name = fname.replace("entries/","")
             self.red_history[0] = np.sum(self.red)
         else:
             self.black[:, self.M:] = arr
-            self.black_name = fname
+            self.black_name = fname.replace("entries/","")
             self.black_history[0] = np.sum(self.black)
 
     """
