@@ -2,7 +2,7 @@
 
 ![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
 
-See GameOfLife.py for rules!
+See ``GameOfLife.py`` for rules!
 
 ### Setting up the Python environment
 This code uses a few Python packages. To install them, first download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), and then either create a pre-packaged conda environment with
