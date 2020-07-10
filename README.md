@@ -1,7 +1,7 @@
 # Whizkey Game of Life tournament
 ![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
 
-See ``GameOfLife.py`` for rules!
+See ``GameOfLife.py`` for rules! Learn more about the diverse lifeforms that populate Conway's Game of Life from https://www.conwaylife.com/wiki.
 
 ### Setting up the Python environment
 This code uses a few Python packages. To install them, first download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), and then either create a pre-packaged conda environment with
@@ -29,8 +29,8 @@ To play a game with other inputs files in the ``entries/`` folder, simply pass t
 python play_game.py [File 1] [File 2]
 ```
 
-### Entering the Whizkey tournament
-All you have to do to enter the tournament is send one (or more!) input file(s) to Tristan and/or Santi by May 25. (Name the file whatever you want your team name to be.) The competition **will include two categories**: one where input files cannot have more than 100 active cells, and another where input files can have as many active cells as you want. We'll assume that you want to enter input files with <= 100 cells in the first category and files with >100 cells in the second category unless you tell us otherwise!
+### Entering the July 17 JP Jelly Talks tournament
+All you have to do to enter the tournament is send one (or more!) input file(s) to Henri (hdrake@mit.edu) by 11:59 PM July 16th. (Name the file whatever you want your team name to be.) The competition **will include three categories**: one where input files cannot have more than 100 active cells, another where input files can have as many active cells as you want, and one for any patterns that include ["Methuselahs"](https://www.conwaylife.com/wiki/Methuselah) like the R-pentomino, which exhibit extremely rapid growth. We'll assume that you want to enter input files with <= 100 cells in the first category and files with >100 cells in the second category unless you tell us otherwise!
 
 ### Creating custom inputs files
 You can create your own input files by running
