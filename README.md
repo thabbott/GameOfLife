@@ -1,6 +1,6 @@
 # ESS Fall 2024 Half-Baked Game of Life tournament
 
-Hosted by Henri Drake (@hdrake) and Isba Keshwani (@ikeshwani)
+Hosted by Henri Drake ([@hdrake](https://github.com/hdrake)) and Isba Keshwani ([@ikeshwani](https://github.com/ikeshwani))
 
 ![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
 
