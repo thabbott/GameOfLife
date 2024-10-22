@@ -35,8 +35,8 @@ else:
 
 # Set up figure
 fig = plt.figure(figsize = (7,7), dpi = 100)
-plt.xticks(np.arange(-0.5, M + 0.5 + 1, 1), [""]*(M+1))
-plt.yticks(np.arange(-0.5, N + 0.5 + 1, 1), [""]*(N+1))
+plt.xticks(np.arange(-0.5, M + 0.5 + 1, 1), [""]*(M+2))
+plt.yticks(np.arange(-0.5, N + 0.5 + 1, 1), [""]*(N+2))
 plt.grid()
 plt.gca().tick_params(length = 0, grid_alpha = 0.5)
 im = plt.imshow(cells, cmap = "Greys", vmin = 0, vmax = 1)

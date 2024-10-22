@@ -2,8 +2,8 @@ from GameOfLife import *
 
 output_frames = False
 
-fname1 = "Messi"
-fname2 = "Mothership"
+fname1 = "BlockTest"
+fname2 = "Henri-Drake-Skrrrrt"
 
 import sys
 ARGS = sys.argv[1:]

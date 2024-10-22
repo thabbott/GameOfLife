@@ -1,20 +1,26 @@
-# Whizkey Game of Life tournament
+# ESS Fall 2024 Half-Baked Game of Life tournament
+
+Hosted by Henri Drake (@hdrake) and Isba Keshwani (@ikeshwani)
+
 ![Example match of the Adversarial Game of Life](movies/Messi_vs_Mothership/Messi_vs_Mothership.gif)
 
 See ``GameOfLife.py`` for rules! Learn more about the diverse lifeforms that populate Conway's Game of Life from https://www.conwaylife.com/wiki.
 
 ### Setting up the Python environment
-This code uses a few Python packages. To install them, first download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), and then either create a pre-packaged conda environment with
+This code uses a few Python packages. To install them, first download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or use your conda installation if you have one), and then either:
+
+1. Create a pre-packaged conda environment with:
 ```shell
 conda env create -f environment.yml
 ```
-or create a new conda environment manually by running
+or 
+2. Create a new conda environment manually by running:
 ```shell
-conda create --name gameoflife python=3.7
+conda create --name gameoflife python=3.12
 ```
 If creating the environment manually, install the packages needed to run ``play_game.py`` and ``draw_input_matplotlib.py`` by running
 ```shell
-conda install numpy scipy matplotlib
+conda install -c conda-forge numpy scipy matplotlib
 ```
 
 ### Playing an adversarial match of Conway's Game of Life
@@ -22,15 +28,17 @@ To play a game, run
 ```shell
 python play_game.py
 ```
-By default, this game reads initial cell configurations from the ``Messi`` and ``Mothership`` files in the ``entries/`` folder (the two configurations pictured in the gif above) and then allows them to evolve for 1000 time steps. 
+By default, this game reads initial cell configurations from the ``BlockTest`` and ``Henri-Drake-Skrrrrt`` files in the ``entries/`` folder and then allows them to evolve for 1000 time steps.
 
 To play a game with other inputs files in the ``entries/`` folder, simply pass the two filenames as arguments to ``play_game.py``:
 ```shell
 python play_game.py [File 1] [File 2]
 ```
 
-### Entering the July 17 JP Jelly Talks tournament
-All you have to do to enter the tournament is send one (or more!) input file(s) to Henri (hdrake@mit.edu) by 11:59 PM July 16th. (Name the file whatever you want your team name to be.) The competition **will include three categories**: one where input files cannot have more than 100 active cells, another where input files can have as many active cells as you want, and one for any patterns that include ["Methuselahs"](https://www.conwaylife.com/wiki/Methuselah) like the R-pentomino, which exhibit extremely rapid growth. We'll assume that you want to enter input files with <= 100 cells in the first category and files with >100 cells in the second category unless you tell us otherwise!
+### Entering the ESS Half-Baked "Competitive Game of Life" Tournament on November 8th 2024
+To enter the tournament, please create a Game of Life file named `[FirstName]-[LastName]-[StrategyName]` (see instructions below) and submit it to us using one of the following methods by 11:59 PM on November 7th:
+1. Create a Pull Request that adds your entry (or multiple entries) to the `entries/` directory of this repository on Github.
+2. Send one (or more!) input file(s) to Henri Drake (hfdrake@uci.edu)
 
 ### Creating custom inputs files
 You can create your own input files by running
@@ -42,9 +50,9 @@ and clicking on cells to toggle cells between being inactive (white) or active (
 ![Example creation of two configurations and a match between them!](movies/example_small.gif)
 
 ### Placing pre-defined patterns
-In ```draw_input_matplotlib.py```, we have added the ability to load pre-existing Game of Life patterns in the conventional [Run Length Encoded (RLE) format](https://www.conwaylife.com/wiki/Run_Length_Encoded). We have place some common example patterns in ``patterns/``. To load in a pattern, simply run ``python draw_input_matplotlib.py`` and instead of clicking to toggle a single cell, press the `A` key (for "**A**dd pattern"). Type the name of the desired pattern (e.g. *glider*) in the terminal prompt and hit enter. When you return to the figure, clicking on a cell the pattern there. When you are done placing copies of the pattern, simply toggle the "Add pattern" mode off by pressing the `T` key (for "**T**oggle add pattern").
+In ```draw_input_matplotlib.py```, we have added the ability to load pre-existing Game of Life patterns in the conventional [Run Length Encoded (RLE) format](https://www.conwaylife.com/wiki/Run_Length_Encoded). We have placed some common example patterns in ``patterns/``. To load in a pattern, simply run ``python draw_input_matplotlib.py`` and instead of clicking to toggle a single cell, press the `A` key (for "**A**dd pattern"). Type the name of the desired pattern (e.g. *glider*) in the terminal prompt and hit enter. When you return to the figure, you will see the outline of the pattern under your cursor and can place it on the grid by clicking. When you are done placing copies of the pattern, simply toggle the "Add pattern" mode off by pressing the `T` key (for "**T**oggle add pattern").
 
-The following transformations can be by appending a pattern name with a period and a series of transformations, each separated by an underscore:
+The following transformations can be applied to a pattern by appending a pattern name with a period and a series of transformations, each separated by an underscore:
 - `rx`: reflection in x
 - `ry`: reflection in y
 - `r90`: counter-clockwise rotation by 90°

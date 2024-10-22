@@ -65,11 +65,11 @@ class GameOfLife:
         axes[0].yaxis.set_major_locator(plt.NullLocator())
         axes[0].xaxis.set_major_locator(plt.NullLocator())
         self.red_history_plot, = axes[1].plot(
-                range(0, self.T+1), self.red_history, "r",
-                label = self.red_name)
+                range(0, self.T+1), self.red_history,
+                "r-", alpha=0.75, label = self.red_name)
         self.black_history_plot, = axes[1].plot(
-                range(0, self.T+1), self.black_history, "b",
-                label = self.red_name)
+                range(0, self.T+1), self.black_history,
+                "b-", alpha=0.75, label = self.red_name)
         axes[1].set_xlim((0, T))
         axes[1].set_xlabel("Round")
         axes[1].set_ylabel("Cells")
@@ -188,9 +188,11 @@ class GameOfLife:
         self.red[red_mask] = 1
         self.black[:,:] = 0
         self.black[black_mask] = 1
-        self.t += 1
-        self.red_history[self.t] = np.sum(self.red)
-        self.black_history[self.t] = np.sum(self.black)
+        if self.t < len(self.red_history)-1:
+            self.t += 1
+            self.red_history[self.t] = np.sum(self.red)
+            self.black_history[self.t] = np.sum(self.black)
+
 
     """
     Check if red has won
